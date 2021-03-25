@@ -1,5 +1,6 @@
  import Head from 'next/head';
  import styles from '../styles/imad.module.css';
+ import Item from '../components/Item';
  const Index = ({data})=>{
   return (
   <>
@@ -8,8 +9,7 @@
   </Head>
   <div className={styles.liste} >
     {data.map((d,index)=>{
-    return (<div key={index}>
-      <a href={"posts/"+d.id} >{d.title }</a></div>)
+    return (<Item  key={index} data={d}/>)
   })}
   </div>
   
