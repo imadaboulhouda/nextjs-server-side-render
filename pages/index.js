@@ -1,11 +1,12 @@
  import Head from 'next/head';
+ import styles from '../styles/imad.module.css';
  const Index = ({data})=>{
   return (
   <>
   <Head>
     <title>Imad</title>
   </Head>
-  <div className="liste">
+  <div className={styles.liste} >
     {data.map((d,index)=>{
     return (<div key={index}>
       <a href={"posts/"+d.id} >{d.title }</a></div>)
