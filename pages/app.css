@@ -1,0 +1,13 @@
+.liste {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.liste div {
+    padding: 5px 10px;
+    flex: 0 0 20%;
+    box-shadow: 1px 7px 2px #0000002b;
+    margin-right: 10px;
+    flex: 0 0 calc(25% - 10px);
+    margin-top: 10px;
+}
